@@ -1,0 +1,173 @@
+binance:
+  apiKey: API_KEY
+  secret: SECRET
+  commission: 0.1
+
+currencies:
+  - symbol: DFUSDT
+    # Overwrite global config
+    binance:
+      apiKey: API_KEY
+      secret: SECRET
+      commission: 0.2
+      debug: true
+    useSR: true
+    shortPatterns: true
+    precision: 4
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.0030
+    count: 1000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: DFUSDT
+    useSR: true
+    shortPatterns: true
+    precision: 4
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.0030
+    count: 1000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: false
+    candleTimeBuffer: 5
+
+  - symbol: GALAUSDT
+    useSR: true
+    shortPatterns: true
+    precision: 5
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.00040
+    count: 1000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: false
+    candleTimeBuffer: 5
+
+  - symbol: TROYUSDT
+    useSR: true
+    precision: 6
+    shortPatterns: true
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.000050
+    count: 3000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: CELRUSDT
+    useSR: true
+    precision: 5
+    shortPatterns: true
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.00043
+    count: 2000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: ETHUSDT
+    useSR: true
+    precision: 2
+    shortPatterns: true
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 12.0
+    count: 0.1
+    floatNumbers: 4
+    countNumber: 4
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: COTIUSDT
+    useSR: true
+    shortPatterns: true
+    precision: 4
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.002
+    count: 1000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: RENUSDT
+    useSR: true
+    shortPatterns: true
+    precision: 4
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 0.004
+    count: 1000
+    floatNumbers: 0
+    countNumber: 0
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
+
+  - symbol: BNBUSDT
+    useSR: true
+    precision: 1
+    shortPatterns: true
+    srDiffPercent: 0.015
+    useStopOrder: true
+    stopOrderDiff: 1.4
+    count: 10
+    floatNumbers: 4
+    countNumber: 4
+    interval: 60
+    mode: Candle
+    klineIntervals:
+      - 1m
+    priceBuffer: 100
+    dryRun: true
+    candleTimeBuffer: 5
