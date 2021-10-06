@@ -32,15 +32,11 @@ func main() {
 
 	ctx, closer := pools.Run()
 	c := make(chan os.Signal, 1)
-	signal.Notify(c, os.Interrupt, syscall.SIGTERM, syscall.SIGUSR1)
+	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
 	go func() {
 		for {
-			sig := <-c
+			_ = <-c
 			log.Println("Total profit:", pools.GetProfit())
-			if sig == syscall.SIGUSR1 {
-				// We want just profit
-				continue
-			}
 			closer <- struct{}{}
 			time.Sleep(time.Second * 5)
 			os.Exit(1)

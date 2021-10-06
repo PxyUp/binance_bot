@@ -23,7 +23,6 @@ type Item struct {
 	ShortPatterns    bool                      `yaml:"shortPatterns"`
 	Symbol           string                    `yaml:"symbol"`
 	Count            float64                   `yaml:"count"`
-	FloatNumbers     int                       `yaml:"floatNumbers"`
 	CountNumber      int                       `yaml:"countNumber"`
 	KlineIntervals   []services.CandleInterval `yaml:"klineIntervals"`
 	Interval         int                       `yaml:"interval"`

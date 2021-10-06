@@ -46,7 +46,7 @@ func (p *Pool) UseConfig(config *config.Configs) *Pool {
 				services.Commission,
 				symbol.Count,
 				symbol.PriceBuffer,
-				"%."+fmt.Sprintf("%df", symbol.FloatNumbers),
+				"%."+fmt.Sprintf("%df", symbol.CountNumber),
 				symbol.CountNumber,
 				time.Duration(symbol.CandleTimeBuffer)*time.Second,
 				symbol.DryRun,

@@ -18,7 +18,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.0030
     count: 1000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -36,7 +35,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.0030
     count: 1000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -54,7 +52,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.00040
     count: 1000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -72,7 +69,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.000050
     count: 3000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -90,7 +86,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.00043
     count: 2000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -108,7 +103,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 12.0
     count: 0.1
-    floatNumbers: 4
     countNumber: 4
     interval: 60
     mode: Candle
@@ -126,7 +120,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.002
     count: 1000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -144,7 +137,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 0.004
     count: 1000
-    floatNumbers: 0
     countNumber: 0
     interval: 60
     mode: Candle
@@ -162,7 +154,6 @@ currencies:
     useStopOrder: true
     stopOrderDiff: 1.4
     count: 10
-    floatNumbers: 4
     countNumber: 4
     interval: 60
     mode: Candle
