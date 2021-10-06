@@ -8,6 +8,10 @@ Download from [Release page](https://github.com/PxyUp/binance_bot/releases)
 ./$(version)-binance_bot-linux-amd64 --path=config_example.yaml
 ```
 
+# Important
+
+**If you run not in dryRun mode make sure you have enough money(or other count) for first buy amount of coin which you put in configuration**
+
 # Configuration
 
 ```yaml
