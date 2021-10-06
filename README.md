@@ -41,8 +41,10 @@ currencies:
     countNumber: 0 # For some symbol we cant buy 0.999 for example, and in that case you should put precision number for count here (for example if we can put count 0.888 we should put here 3)
     interval: 60 # How often do action for operation in seconds (for candles 60 is ok, for livePrice mode better use 2sec)
     mode: Candle # We can have Candle/LivePrice
-    klineIntervals: # Array of which candles we use for analyse
+    klineIntervals: # Array of which candles we use for analyse (They analysed together, it is means if 1m show sell and 3m show nothing we will do nothing)
       - 1m
+      - 3m
+      - 5m
     priceBuffer: 100 # Array of price for analyse (SR/Patterns)
     candleTimeBuffer: 5 # How much we should wait until new candles comming (for example for 1m canldes comming in 00 second, so we will analyse candle on 54second(59-5)
     dryRun: true # Will not do real trade, but we can check profit and estimation of profit)
