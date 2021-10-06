@@ -27,6 +27,7 @@ jobs:
 
       - name: Release to Github
         run: |
+          make build
           ./scripts/git_release.sh github_api_token=${{ secrets.RELEASE_TOKEN }} owner=PxyUp repo=binance_bot tag=${{ steps.set_env.outputs.RELEASE_VERSION }} filename=./bin/${{ steps.set_env.outputs.RELEASE_VERSION }}-binance_bot-linux-arm64
           ./scripts/git_release.sh github_api_token=${{ secrets.RELEASE_TOKEN }} owner=PxyUp repo=binance_bot tag=${{ steps.set_env.outputs.RELEASE_VERSION }} filename=./bin/${{ steps.set_env.outputs.RELEASE_VERSION }}-binance_bot-windows-amd64.exe
           ./scripts/git_release.sh github_api_token=${{ secrets.RELEASE_TOKEN }} owner=PxyUp repo=binance_bot tag=${{ steps.set_env.outputs.RELEASE_VERSION }} filename=./bin/${{ steps.set_env.outputs.RELEASE_VERSION }}-binance_bot-linux-amd64
@@ -35,7 +36,7 @@ jobs:
     runs-on: macOS-10.15
     needs: build
     steps:
-      - name: Set up Go 1.15.7
+      - name: Set up Go 1.17.1
         uses: actions/setup-go@v1
         with:
           go-version: 1.17.1
