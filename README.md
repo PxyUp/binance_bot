@@ -14,6 +14,8 @@ Download from [Release page](https://github.com/PxyUp/binance_bot/releases)
 
 # Configuration
 
+[Check example](https://github.com/PxyUp/binance_bot/blob/master/config_example.yaml)
+
 ```yaml
 binance:
   apiKey: API_KEY # Binance API KEY
