@@ -1,4 +1,4 @@
-# Multi-Currency bot for Binance
+# Multi-Currency bot for Binance (Bot is not guarantee for success)
 
 # Usage
 
