@@ -2,6 +2,11 @@ package currency
 
 import (
 	"errors"
+	"log"
+	"math"
+	"sync"
+	"time"
+
 	"github.com/PxyUp/binance_bot/order"
 	"github.com/PxyUp/binance_bot/patterns"
 	"github.com/PxyUp/binance_bot/services"
@@ -9,10 +14,6 @@ import (
 	"github.com/adshao/go-binance/v2"
 	"github.com/adshao/go-binance/v2/common"
 	"golang.org/x/sync/errgroup"
-	"log"
-	"math"
-	"sync"
-	"time"
 )
 
 type WatcherMode string
@@ -43,7 +44,6 @@ type Watcher struct {
 	interval            time.Duration
 	lastPrice           float64
 	lastAction          patterns.Action
-	orderService        interface{}
 	afterCommission     float64
 	count               float64
 	initialCount        float64

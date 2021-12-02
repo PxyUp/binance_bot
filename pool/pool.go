@@ -3,12 +3,13 @@ package pool
 import (
 	"context"
 	"fmt"
+	"log"
+	"time"
+
 	"github.com/PxyUp/binance_bot/config"
 	"github.com/PxyUp/binance_bot/currency"
 	"github.com/PxyUp/binance_bot/patterns"
 	"github.com/PxyUp/binance_bot/services"
-	"log"
-	"time"
 )
 
 type Pool struct {
@@ -25,7 +26,7 @@ func (p *Pool) UseConfig(config *config.Configs) *Pool {
 		if symbol.Binance != nil {
 			binConf = symbol.Binance
 		}
-		if  symbol.Name != "" {
+		if symbol.Name != "" {
 			name = symbol.Name
 		}
 		p.watchers = append(p.watchers,

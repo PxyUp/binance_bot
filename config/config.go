@@ -1,10 +1,11 @@
 package config
 
 import (
+	"io/ioutil"
+
 	"github.com/PxyUp/binance_bot/currency"
 	"github.com/PxyUp/binance_bot/services"
 	"gopkg.in/yaml.v2"
-	"io/ioutil"
 )
 
 type Configs struct {

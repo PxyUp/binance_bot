@@ -1,11 +1,12 @@
 package order
 
 import (
-	"github.com/PxyUp/binance_bot/services"
-	"github.com/adshao/go-binance/v2"
 	"log"
 	"sync"
 	"time"
+
+	"github.com/PxyUp/binance_bot/services"
+	"github.com/adshao/go-binance/v2"
 )
 
 type OrderWatcher struct {

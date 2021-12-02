@@ -2,13 +2,14 @@ package main
 
 import (
 	"flag"
-	"github.com/PxyUp/binance_bot/config"
-	"github.com/PxyUp/binance_bot/pool"
 	"log"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/PxyUp/binance_bot/config"
+	"github.com/PxyUp/binance_bot/pool"
 )
 
 // Buy [0 -1 -1 -1 -1 -1 1 1]

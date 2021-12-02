@@ -1,9 +1,10 @@
 package services
 
 import (
-	"github.com/adshao/go-binance/v2"
 	"strconv"
 	"time"
+
+	"github.com/adshao/go-binance/v2"
 )
 
 func klineToCandle(kline *binance.Kline) *Candle {

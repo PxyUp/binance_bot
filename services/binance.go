@@ -4,10 +4,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"github.com/adshao/go-binance/v2"
 	"log"
 	"strconv"
 	"time"
+
+	"github.com/adshao/go-binance/v2"
 )
 
 type CandleInterval string

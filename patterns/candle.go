@@ -2,6 +2,7 @@ package patterns
 
 import (
 	"errors"
+
 	"github.com/PxyUp/binance_bot/services"
 )
 
